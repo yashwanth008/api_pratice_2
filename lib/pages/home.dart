@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-import 'dart:convert';
-
 import 'package:news_go/models/articles.dart';
 import 'package:news_go/services/newsApi.dart';
 
 
 List<Article>? art;
-bool isloading = true;
+bool isLoading = true;
 
 
 
@@ -18,10 +16,10 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  getart() async{
+  getArt() async{
     art = await apicall();
     setState((){
-      isloading = false;
+      isLoading = false;
     });
 
   }
@@ -30,7 +28,7 @@ class _HomeState extends State<Home> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    getart();
+    getArt();
   }
   @override
   Widget build(BuildContext context) {

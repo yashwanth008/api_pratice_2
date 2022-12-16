@@ -30,6 +30,11 @@ class Article {
     );
   }
 
+  // static List<Article> articleFromSnapshot(List? Snapshot){
+  //   return Snapshot!.map((data){
+  //     return Article.fromJson(data);
+  //   }).toList();
+  // }
   static List<Article> articleFromArray(List? array) {
     return array!.map((data) {
       return Article.fromJson(data);

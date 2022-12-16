@@ -4,7 +4,7 @@ import 'dart:convert';
 import 'package:news_go/models/articles.dart';
 
 
-String? stringResponse;
+
 Map? mapResponse;
 List? listResponse;
 List<Article>? articles;
